@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-html
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Welcome</title>
+        <!-- Include Bootstrap CSS from CDN -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+      </head>
+      <body>
+        <div class="container">
+          <div class="jumbotron mt-5">
+            <h1 class="display-4">Welcome to nginx!</h1>
+          </div>
+        </div>
+      </body>
+    </html>
